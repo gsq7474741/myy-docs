@@ -1,6 +1,6 @@
 # 木易养数据中台系统需求文档
 
-| 任务名称                                                   | PRD-数据中台需求          | 
+| 任务名称                                                   | MYY-4 PRD-数据中台需求    | 
 |--------------------------------------------------------|---------------------|
 | 提交作者<input type="checkbox" class="rowselector hidden"> | gsq                 | 
 | 提交时间<input type="checkbox" class="rowselector hidden"> | 2024-08-13          | 
@@ -78,7 +78,8 @@
 
 - 后端开发语言：Python（待定）
 - 部署环境：阿里云
-- 数据库：MySQL 阿里云RDS
+- 数据库：阿里云RDS / InfluxDB
+- 缓存：Redis 阿里云Redis
 - 消息队列：AMQP
 - API接口：RESTful（待定）
 - 前端技术栈：Nuxt、Next.js等全栈框架，或Vue、React等纯前端框架
