@@ -1,3 +1,6 @@
 [submodule "myy"]
 	path = myy
 	url = https://github.com/gsq7474741/MYY.git
+[submodule "hardware"]
+	path = hardware
+	url = https://github.com/gsq7474741/myy-hardware.git
