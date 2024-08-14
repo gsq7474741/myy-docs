@@ -1,10 +1,10 @@
 # 数据库调研（阿里云RDS、Influx、自建）
 
-| 任务名称                                                   | MYY-25 调研-阿里云RDS数据库        | 
-|--------------------------------------------------------|----------------------------|
-| 提交作者<input type="checkbox" class="rowselector hidden"> | gsq                        | 
-| 提交时间<input type="checkbox" class="rowselector hidden"> | 2024-08-13                 | 
-| 文件名                                                    | aly_rds_investigate.md<br> | 
+| 任务名称                                                   | MYY-25 调研-阿里云RDS数据库   | 
+|--------------------------------------------------------|-----------------------|
+| 提交作者<input type="checkbox" class="rowselector hidden"> | gsq                   | 
+| 提交时间<input type="checkbox" class="rowselector hidden"> | 2024-08-13            | 
+| 文件名                                                    | db_investigate.md<br> | 
 
 # 一、概述
 
