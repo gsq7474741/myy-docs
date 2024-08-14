@@ -1,10 +1,10 @@
-# 标题
+# 数据库调研（阿里云RDS、Influx、自建）
 
-| 任务名称                                                   | MYY-25 调研-阿里云RDS数据库                              | 
-|--------------------------------------------------------|--------------------------------------------------|
-| 提交作者<input type="checkbox" class="rowselector hidden"> | gsq                                              | 
-| 提交时间<input type="checkbox" class="rowselector hidden"> | 2024-08-13                                       | 
-| 文件名                                                    | 提交的markdown设计文档文件名称，如：aly_rds_investigate.md<br> | 
+| 任务名称                                                   | MYY-25 调研-阿里云RDS数据库        | 
+|--------------------------------------------------------|----------------------------|
+| 提交作者<input type="checkbox" class="rowselector hidden"> | gsq                        | 
+| 提交时间<input type="checkbox" class="rowselector hidden"> | 2024-08-13                 | 
+| 文件名                                                    | aly_rds_investigate.md<br> | 
 
 # 一、概述
 
@@ -25,6 +25,7 @@ IoT设备产生的本质上是时序数据，时序数据有专用的时序数�
 描述业内一般如何实现此功能，包括与此功能相关的现状、未来趋势；
 
 对调研的方案进行对比**评价**和**对比分析**，论述各种方案的优劣势。
+tbd
 
 ## 1、阿里云RDS数据库
 
@@ -51,6 +52,7 @@ Server、PostgreSQL和MariaDB引擎，并且提供了容灾、备份、恢复、
 1.8版本，用于存储大规模的时序数据并进行实时分析，包括来自DevOps监控、应用指标和IoT传感器上的数据。
 
 特点：
+
 - InfluxDB®是您处理时序数据的一个绝佳选择，目前有以下特点：
 - 专为时间序列数据量身打造的高性能数据存储。TSM引擎提供数据高速读写和压缩等功能。
 - 简单高效的HTTP API写入和查询接口。
@@ -59,11 +61,11 @@ Server、PostgreSQL和MariaDB引擎，并且提供了容灾、备份、恢复、
 - 数据保留策略（Retention policies）能够有效地使旧数据自动失效。
 
 评论：
+
 - 4v16g起步，只能包年包月，港区丐版878元/月，北京区丐版是591元/月。
 - 成本比较高，不知道当数据规模大到什么程度时，成本对比RDS会有优势。
 - 存储桶的抽象模式，不像库表，在设计数据架构时和关系型数据库有很大不同。
 - 时序数据的查询和分析，需要学习新的查询语言。
-
 
 ## 3、自建数据库
 
@@ -72,6 +74,7 @@ Server、PostgreSQL和MariaDB引擎，并且提供了容灾、备份、恢复、
 但是购买虚拟机的价格比较高，买二手物理服务器自行搭建也是一种低成本的方案。
 
 自行购买物理机有以下几点需要注意：
+
 - 机器的配置，CPU、内存、硬盘、网卡等
 - 一般3-4代之前的服务器会在价格上有较大优势，如果买最新代或次新代服务器还不如买虚拟机
 - 自己买物理机最大的问题是网络，要搞定防火墙、路由器等网络设备，还需要公网ip、带宽、上下行流量等
@@ -81,6 +84,7 @@ Server、PostgreSQL和MariaDB引擎，并且提供了容灾、备份、恢复、
 # 名词解释
 
 # 附件及参考资料
+
 - [阿里云RDS数据库](https://help.aliyun.com/zh/rds/product-overview/what-is-apsaradb-rds?spm=5176.yaochi_portal_overview.0.0.42034d7ey0BXr2)
 - [时序数据库 InfluxDB® 版](https://help.aliyun.com/document_detail/113093.html?spm=a2c4g.440789.0.i0)
 - [淘宝-浦东服务器](https://shop33284911.taobao.com/)
