@@ -39,6 +39,8 @@ MY-T01是一个物联网终端硬件设备，用于监测园林植物（如罗�
 
 ### 1、温湿度探头
 
+240821更新：优先考虑485防水探头
+
 #### AHT2417C
 
 [链接](https://item.taobao.com/item.htm?spm=a21n57.1.item.26.464a66aeXHpFxR&priceTId=2147826917237237103427300e994e&utparam=%7B%22aplus_abtest%22:%22552a1e85f7e36122e26cea1b60818701%22%7D&id=712622792060&ns=1&abbucket=8&skuId=4989875820559&pisk=fiIotoYWlIG6XOMLZix7JNXOCR4AibtBP6np9HdUuIRj2eRLP6Yh9sTF23BRiB5OtpIRvMbjxO6C28tLF36WAHPT6lIhFTtCPtkd-gmq0p6q4b-EZT-SUHPT6k0x3UNJYwU4DK9DuI9HLDJPTn-2dLxeLL-UnIJHC2lPTHyc3I9HT2urYol2LdvrCJlpsw7c07SqDJE5Vb3XFUANnPZ3Y2pI6BBroDnCmZ2v1TuIYDSDEUj3aS1dwH7PesYOr5mk5T71Od5raWACmtSP7srxqHXV7MxV0SkvaN6cx3Izpu-N5sjH7h4LFUWho6tR0Juy_aCJJgTmg8AC2_jHPGPtcQ7ccMxRk7m9Oe7AVFs8g0xN5TKR81PxyQ7MLgytuV-n8D94piuIRUJXnCiGAJhJ0evoW-2m5xYyhLwTn-0IeUJXnCe0nVgpzK97B)
@@ -91,6 +93,24 @@ MY-T01是一个物联网终端硬件设备，用于监测园林植物（如罗�
 
 ### 3、光照探头
 
+240821更新：找到了一种485通讯且可以泡水的探头，放弃自研
+
+### 1、蓝控电子科技
+
+[链接](https://item.taobao.com/item.htm?spm=a21n57.1.item.3.12af523cwFSDPZ&priceTId=213e38f617242186401812616e7a05&utparam=%7B%22aplus_abtest%22:%22f887a6a1ffb440b5ce1b10f7c2523639%22%7D&id=658222609252&ns=1&abbucket=8&skuId=5367736821192&pisk=fyLitmj1A9w7X7NxIebsDI6vicod6R_ffKUAHZBqY9WQWiWxfKjDHps2WNd9KtJJnsL9kExQoQOXWf_x1NO1lZk-e4LD1C_XzNF4mFVFL1OFgRW4IC7__Zk-eqqLTGMOunKIkR5hY91cg15w3w7FisQVgtzqt95cNoyw3ZlHT910u-WNgWzFasyZaw2AEn-H8AJ94IpeNyAdsGX0k6aDzeURfTrCLr4cIbINU4B3ur8hsBPz62aZr9-90FQe7vPR8QtpQ6boS81MYQbNsKg75NRyTnSMomF5hHAe2MxQ6j6X-B8w0BwiTaAHv3IMxAzcpFBCVF7mq51pSB85mFMg8OvBT3Q6zvaDUBdJ5MTmEJWXX__FiEGzmtjV4rEU4Zq4l6lv8oZfb61hFzYjMRQFm1q-tXq7tG5C1bhntoNOb61heXc3VoINO1GR.)
+
+电压：5V~12V
+电流：不超过5mA
+输出：数字，RS485 + Modbus-RTU
+范围：0~200000Lux
+分辨率：0.01Lux，精度5%
+防护性：选泡水款，可泡水
+价格：27.9
+
+---
+以下作废
+
+---
 市面暂无合适的光照探头，我们需要自己开发
 
 **光照传感器芯片选型**
